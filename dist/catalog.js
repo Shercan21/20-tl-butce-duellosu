@@ -1,0 +1,70 @@
+(function(root){
+const groups=[
+['kahvalti','Kahvaltı sofrası','🥞','En güzel sofrayı kur.','Lezzet',[
+['🧀','Peynir tabağı','Soğuklar',8],['🍳','Menemen','Sıcaklar',10],['🥯','Çıtır simit','Fırından',6],['🫒','Zeytin kasesi','Soğuklar',5],['☕','Demli çay','İçecek',7],['🍯','Bal ve kaymak','Tatlılar',8],['🥗','Domates ve salatalık','Tazeler',6],['🥐','Kruvasan','Fırından',7],['🥞','Mini pankekler','Tatlılar',9],['🥘','Sucuklu yumurta','Sıcaklar',11]]],
+['hayvanat','Hayvanat bahçesi','🦁','Kendi vahşi dünyanı kur.','Keşif',[
+['🦁','Aslan ailesi','Savan',11],['🦒','Zürafa alanı','Savan',9],['🐘','Fil sürüsü','Savan',10],['🐧','Penguen koyu','Kutup',8],['🐻‍❄️','Kutup ayısı','Kutup',10],['🦜','Papağan bahçesi','Kuşlar',7],['🦩','Flamingo göleti','Kuşlar',6],['🐒','Maymun adası','Orman',8],['🐅','Kaplan ormanı','Orman',11],['🦋','Kelebek evi','Küçük dünya',6]]],
+['stadyum','Futbol stadyumu','🏟️','Tribünleri ayağa kaldır.','Atmosfer',[
+['🌱','Hibrit çim saha','Saha',11],['🪑','Konforlu tribünler','Tribün',8],['📣','Taraftar grubu','Atmosfer',9],['💡','Projektör sistemi','Teknoloji',7],['📺','Dev skor ekranı','Teknoloji',8],['🥅','Profesyonel kaleler','Saha',7],['🏠','VIP loca','Tribün',9],['🍔','Yemek büfeleri','Hizmet',6],['🎊','Maç önü koreografi','Atmosfer',8],['🚇','Stadyum ulaşımı','Hizmet',10]]],
+['bilgisayar','Bilgisayar toplama','🖥️','Hayalindeki sistemi topla.','Performans',[
+['🧠','Güçlü işlemci','Donanım',11],['🎮','Üst seviye ekran kartı','Donanım',12],['💾','Hızlı SSD','Depolama',8],['🧩','32 GB bellek','Donanım',8],['🖥️','Yüksek tazelemeli monitör','Ekran',10],['⌨️','Mekanik klavye','Çevre birimi',6],['🖱️','Hassas oyuncu faresi','Çevre birimi',6],['🧊','Sıvı soğutma','Kasa',7],['🔌','Verimli güç kaynağı','Kasa',8],['🎧','Oyuncu kulaklığı','Ses',7]]],
+['yatak','Yatak odası','🛏️','Kendine huzurlu bir köşe kur.','Konfor',[
+['🛏️','Büyük konforlu yatak','Mobilya',12],['🧺','Yumuşak nevresimler','Tekstil',8],['🚪','Geniş gardırop','Depolama',10],['🪞','Boy aynası','Dekor',6],['💡','Başucu lambası','Aydınlatma',6],['🪟','Karartma perdeleri','Tekstil',7],['🪴','Yeşil bitki','Dekor',5],['🗄️','İki komodin','Depolama',7],['🪑','Okuma koltuğu','Mobilya',8],['✨','Yıldız ışıkları','Aydınlatma',5]]],
+['oturma','Oturma odası','🛋️','Günlük keyfin adresini tasarla.','Rahatlık',[
+['🛋️','Rahat köşe koltuk','Mobilya',11],['📺','Büyük televizyon','Eğlence',10],['🧶','Yumuşacık halı','Tekstil',7],['🪵','Ahşap orta sehpa','Mobilya',6],['📚','Kitaplık','Depolama',8],['💡','Sıcak ışıklı lambader','Aydınlatma',7],['🪴','Salon bitkisi','Dekor',5],['🎮','Oyun konsolu','Eğlence',9],['🧺','Koltuk şalı ve minderler','Tekstil',6],['🖼️','Duvar tablosu','Dekor',6]]],
+['salon','Misafir salonu','✨','Misafirlerini hayran bırak.','Şıklık',[
+['🛋️','Şık koltuk takımı','Mobilya',12],['🍽️','Büyük yemek masası','Yemek alanı',10],['💎','Kristal avize','Aydınlatma',9],['🪞','Dekoratif ayna','Dekor',6],['🧶','Desenli büyük halı','Tekstil',8],['🏺','Seramik vazo seti','Dekor',6],['🪟','Tül ve fon perdeler','Tekstil',7],['🗄️','Konsol ve vitrin','Depolama',9],['🪑','Tasarım berjer','Mobilya',7],['🕯️','Mumlu masa düzeni','Yemek alanı',5]]],
+['isyeri','İşyeri ve ofis','🏢','Çalışmak isteyeceğin ofisi kur.','Verim',[
+['🪑','Ergonomik sandalye','Mobilya',10],['🖥️','Çalışma bilgisayarı','Teknoloji',11],['🗃️','Düzenli arşiv','Depolama',6],['🪵','Geniş çalışma masası','Mobilya',9],['☕','Kahve köşesi','Mola',8],['📡','Hızlı internet','Teknoloji',10],['🪴','Ofis bitkileri','Ortam',5],['💡','Gün ışığı aydınlatma','Ortam',7],['🛋️','Mola alanı','Mola',7],['📝','Toplantı tahtası','İletişim',6]]],
+['mutfak','Mutfak','🍳','Her aşçının hayalini tasarla.','Ustalık',[
+['🔥','Profesyonel ocak','Pişirme',10],['🧊','Geniş buzdolabı','Beyaz eşya',11],['🍞','Ankastre fırın','Pişirme',9],['🔪','Şef bıçakları','Ekipman',7],['🍲','Çelik tencere seti','Ekipman',8],['☕','Espresso makinesi','Keyif',8],['🗄️','Akıllı mutfak dolapları','Depolama',9],['🍽️','Bulaşık makinesi','Beyaz eşya',8],['🪴','Taze ot köşesi','Keyif',5],['🪵','Mutfak adası','Mobilya',10]]],
+['banyo','Banyo','🛁','Küçük bir spa yarat.','Ferah',[
+['🛁','Bağımsız küvet','Su alanı',11],['🚿','Yağmur duşu','Su alanı',9],['🪞','Işıklı ayna','Dekor',7],['🧺','Pamuk havlular','Tekstil',6],['🗄️','Lavabo dolabı','Depolama',8],['🪴','Tropik bitki','Dekor',5],['🧼','Bakım seti','Bakım',7],['🔥','Havlupan','Konfor',8],['🕯️','Kokulu mumlar','Konfor',5],['🧴','Düzenleyici raflar','Depolama',6]]],
+['oyunodasi','Oyun odası','🎮','Bir tur daha dedirten oda.','Eğlence',[
+['🎮','Yeni nesil konsol','Oyun',12],['🖥️','Ultra geniş monitör','Ekran',10],['🪑','Oyuncu koltuğu','Mobilya',8],['⌨️','RGB klavye','Ekipman',6],['🎧','Çevresel ses kulaklığı','Ses',7],['💡','Akıllı ışık panelleri','Atmosfer',7],['🕹️','Retro arcade makinesi','Oyun',10],['🛋️','Arkadaş koltuğu','Mobilya',6],['🔊','Güçlü ses sistemi','Ses',8],['🖼️','Oyun posterleri','Atmosfer',5]]],
+['bahce','Bahçe ve balkon','🌿','Kendi yeşil kaçamağın.','Doğa',[
+['🌳','Meyve ağaçları','Yeşillik',9],['🌷','Rengarenk çiçekler','Yeşillik',7],['🪑','Bahçe oturma grubu','Mobilya',10],['🛖','Gölgelikli kamelya','Yapı',10],['🍖','Barbekü köşesi','Keyif',8],['💧','Küçük süs havuzu','Dekor',7],['💡','Bahçe ışıkları','Dekor',6],['🛌','Rahat hamak','Keyif',8],['🧑‍🌾','Sebze bostanı','Üretim',8],['🧰','Bahçe aletleri','Bakım',6]]],
+['garaj','Garaj ve arabalar','🏎️','Rüya garajını doldur.','Sürüş',[
+['🏎️','Spor otomobil','Performans',12],['🚙','Arazi aracı','Macera',10],['🚗','Klasik otomobil','Koleksiyon',9],['🏍️','Spor motosiklet','Macera',8],['🔧','Tamir tezgahı','Ekipman',7],['🔋','Elektrikli otomobil','Teknoloji',10],['🧼','Detaylı bakım seti','Bakım',6],['🛞','Yarış lastikleri','Performans',8],['🔌','Şarj istasyonu','Teknoloji',7],['🛵','Şehir scooterı','Koleksiyon',6]]],
+['kafe','Kafe açma','☕','Mahallenin favori kafesi senin.','Keyif',[
+['☕','Profesyonel kahve makinesi','Bar',12],['🥐','Taze pastane tezgahı','Menü',9],['🪑','Rahat masa ve sandalyeler','Mekan',9],['🎵','Keyifli müzik sistemi','Atmosfer',7],['🪴','Yeşil iç dekor','Atmosfer',6],['🍰','İmza tatlılar','Menü',8],['🧋','Soğuk içecek barı','Bar',8],['🛜','Müşteri interneti','Hizmet',6],['🌤️','Açık hava terası','Mekan',10],['📚','Kitap değişim köşesi','Hizmet',5]]],
+['restoran','Restoran kurma','🍽️','Şehrin en leziz adresini aç.','Lezzet',[
+['🧑‍🍳','Yetenekli baş aşçı','Ekip',12],['🔥','Profesyonel mutfak','Mutfak',11],['🍽️','Şık masa düzeni','Salon',8],['🍕','Taş fırın','Mutfak',9],['🥗','Taze malzeme bahçesi','Menü',7],['🍨','Tatlı menüsü','Menü',7],['🤵','Güler yüzlü servis ekibi','Ekip',8],['💡','Sıcak ambiyans','Salon',6],['🛵','Hızlı paket servis','Hizmet',8],['📱','Online rezervasyon','Hizmet',6]]],
+['tatil','Tatil planı','🏝️','En unutulmaz kaçamağı seç.','Anı',[
+['🏖️','Deniz kenarı otel','Konaklama',11],['✈️','Konforlu uçuş','Ulaşım',9],['🚤','Tekne turu','Macera',9],['🍹','Sahil içecekleri','Keyif',6],['🏕️','Yıldız altında kamp','Konaklama',8],['🏛️','Tarihi şehir gezisi','Kültür',8],['🤿','Dalış deneyimi','Macera',10],['🍜','Yerel lezzet turu','Kültür',7],['🚲','Bisiklet kiralama','Ulaşım',6],['💆','Spa günü','Keyif',7]]],
+['kamp','Kamp ve hayatta kalma','🏕️','Doğada en iyi kampı kur.','Dayanıklılık',[
+['⛺','Dört mevsim çadır','Barınma',11],['🛌','Sıcak uyku tulumu','Barınma',9],['🔥','Ateş başlatma seti','Ekipman',8],['💧','Su arıtma filtresi','Temel ihtiyaç',10],['🧭','Pusula ve harita','Yön bulma',7],['🔦','Güçlü kafa lambası','Ekipman',7],['🥫','Yiyecek stoğu','Temel ihtiyaç',9],['🎒','Dayanıklı sırt çantası','Taşıma',7],['🩹','İlk yardım çantası','Güvenlik',8],['🔪','Çok amaçlı çakı','Güvenlik',7]]],
+['lunapark','Lunapark','🎡','Eğlencenin merkezini inşa et.','Heyecan',[
+['🎢','Dev hız treni','Adrenalin',12],['🎡','Işıklı dönme dolap','Manzara',10],['🎠','Atlıkarınca','Aile',8],['👻','Korku tüneli','Adrenalin',9],['🍿','Atıştırmalık standı','Hizmet',6],['🎪','Gösteri çadırı','Gösteri',8],['🎯','Ödüllü oyun standı','Oyun',7],['💦','Su kaydırağı','Aile',9],['🎆','Işık gösterisi','Gösteri',8],['🚂','Park treni','Ulaşım',7]]],
+['akvaryum','Dev akvaryum','🐠','Suyun altında bir dünya kur.','Keşif',[
+['🦈','Köpekbalığı tüneli','Büyük canlılar',12],['🐠','Tropik balıklar','Resif',8],['🪸','Canlı mercan bahçesi','Resif',9],['🐙','Ahtapot alanı','Derin deniz',9],['🪼','Denizanası galerisi','Derin deniz',8],['🐢','Deniz kaplumbağaları','Koruma',10],['🦀','Yengeç kıyısı','Kıyı',6],['🐚','Deniz kabuğu koleksiyonu','Kıyı',5],['💧','Su filtreleme sistemi','Bakım',8],['🌿','Deniz çayırları','Koruma',7]]],
+['uzay','Uzay üssü','🚀','Yeni gezegende hayata başla.','Keşif',[
+['🚀','Keşif roketi','Ulaşım',12],['🛰️','İletişim uydusu','Teknoloji',9],['🏠','Yaşam kapsülü','Yaşam',10],['🌱','Uzay serası','Yaşam',9],['🤖','Yardımcı robot','Teknoloji',8],['🔭','Dev teleskop','Bilim',9],['☀️','Güneş panelleri','Enerji',8],['🚙','Gezegen keşif aracı','Ulaşım',9],['🧪','Araştırma laboratuvarı','Bilim',10],['🔋','Enerji deposu','Enerji',7]]],
+['muzik','Müzik stüdyosu','🎸','Bir sonraki hit burada doğsun.','Ritim',[
+['🎤','Stüdyo mikrofonu','Kayıt',10],['🎹','Dijital piyano','Enstrüman',9],['🎸','Elektro gitar','Enstrüman',9],['🥁','Davul seti','Enstrüman',10],['🎧','Referans kulaklık','Ses',7],['🎚️','Ses mikseri','Kayıt',9],['🔊','Stüdyo monitörleri','Ses',8],['🧱','Akustik paneller','Ortam',8],['🖥️','Müzik bilgisayarı','Teknoloji',10],['💡','Ambiyans ışıkları','Ortam',5]]],
+['sinema','Ev sineması','🎬','Her akşam bir gala gecesi.','Atmosfer',[
+['📽️','4K projeksiyon','Görüntü',12],['🔊','Çevresel ses sistemi','Ses',11],['🛋️','Sinema koltukları','Konfor',10],['🍿','Patlamış mısır makinesi','Atıştırmalık',7],['🪟','Karartma perdeleri','Ortam',8],['💡','Kısılabilir ışıklar','Ortam',6],['🎞️','Film arşivi','İçerik',8],['🧊','Mini içecek dolabı','Atıştırmalık',7],['🖼️','Film afişleri','Dekor',5],['🧺','Yumuşak battaniyeler','Konfor',6]]],
+['spor','Spor salonu','🏋️','Kendi antrenman alanını kur.','Güç',[
+['🏋️','Serbest ağırlık seti','Kuvvet',11],['🏃','Koşu bandı','Kardiyo',10],['🚴','Kondisyon bisikleti','Kardiyo',9],['🧘','Yoga alanı','Esneklik',7],['🥊','Boks torbası','Kuvvet',8],['🪞','Duvar aynaları','Ortam',6],['🚿','Soyunma ve duş alanı','Konfor',8],['🔊','Enerjik ses sistemi','Ortam',6],['🧊','Su ve içecek köşesi','Konfor',7],['🤸','Esneme ekipmanları','Esneklik',6]]],
+['okul','Sınıf tasarlama','🎒','Öğrenmeyi keyfe dönüştür.','İlham',[
+['🪑','Rahat sıralar','Mobilya',10],['📺','Akıllı tahta','Teknoloji',11],['📚','Sınıf kütüphanesi','Öğrenme',9],['🔬','Deney setleri','Bilim',9],['🎨','Sanat köşesi','Yaratıcılık',8],['🌍','Dünya küresi','Öğrenme',6],['🪴','Doğa köşesi','Ortam',5],['💻','Bilgisayar köşesi','Teknoloji',10],['🧩','Zeka oyunları','Yaratıcılık',7],['💡','İyi aydınlatma','Ortam',7]]],
+['cocuk','Çocuk odası','🧸','Küçük hayallere büyük yer aç.','Neşe',[
+['🛏️','Ev şeklinde yatak','Mobilya',11],['🧸','Peluş arkadaşlar','Oyuncak',7],['🧱','Yapı blokları','Oyuncak',8],['📚','Masal kitaplığı','Öğrenme',9],['🎨','Boyama masası','Yaratıcılık',8],['🌈','Renkli duvarlar','Dekor',6],['🧺','Oyuncak dolabı','Depolama',8],['⛺','Oyun çadırı','Oyun alanı',9],['🌙','Gece lambası','Aydınlatma',6],['🧶','Yumuşak oyun halısı','Konfor',7]]],
+['magaza','Mağaza açma','🛍️','Vitrininle herkesi durdur.','Çekicilik',[
+['🪟','Dikkat çekici vitrin','Görünüm',10],['🧥','Özel ürün koleksiyonu','Ürün',12],['🗄️','Şık ürün rafları','Düzen',8],['💡','Vitrin ışıkları','Görünüm',7],['🧾','Hızlı kasa sistemi','Teknoloji',9],['🛋️','Deneme ve bekleme alanı','Konfor',7],['📦','Stok deposu','Düzen',8],['📱','Online mağaza','Teknoloji',10],['🎁','Hediye paketleme köşesi','Hizmet',6],['🤝','Yardımcı satış ekibi','Hizmet',9]]],
+['otel','Otel kurma','🏨','Misafirlerine rüya tatili yaşat.','Konfor',[
+['🛏️','Manzaralı süitler','Konaklama',12],['🏊','Sonsuzluk havuzu','Dinlenme',11],['🍽️','Açık büfe restoran','Yeme içme',9],['🛎️','Güler yüzlü resepsiyon','Hizmet',8],['💆','Spa ve masaj alanı','Dinlenme',9],['🌴','Tropik bahçe','Ortam',7],['☕','Lobi kafesi','Yeme içme',7],['🧳','Bagaj hizmeti','Hizmet',6],['🏋️','Fitness alanı','Aktivite',8],['🎭','Akşam gösterileri','Aktivite',8]]],
+['sehir','Şehir kurma','🌆','Yaşamak isteyeceğin şehri kur.','Yaşam',[
+['🏘️','Rahat konutlar','Yaşam',11],['🏥','Modern hastane','Hizmet',10],['🏫','İyi okullar','Eğitim',10],['🌳','Büyük şehir parkı','Doğa',8],['🚇','Metro ağı','Ulaşım',11],['🎭','Kültür merkezi','Kültür',8],['🚲','Bisiklet yolları','Ulaşım',7],['☀️','Temiz enerji tesisi','Altyapı',9],['📚','Halk kütüphanesi','Eğitim',7],['💧','Temiz su sistemi','Altyapı',10]]]
+];
+groups.push(
+['dekor','Dekor ve aksesuar','🏺','Mekana kendi imzanı at.','Uyum',[
+['🖼️','Büyük sanat tablosu','Duvar',10],['🪞','Tasarım ayna','Duvar',9],['🏺','Seramik vazo','Obje',7],['🕯️','Kokulu mum seti','Atmosfer',6],['🪴','Büyük salon bitkisi','Yeşillik',8],['💡','Heykel formunda lamba','Aydınlatma',9],['🧶','Dokuma kilim','Tekstil',8],['🛋️','Dekoratif yastıklar','Tekstil',6],['🪷','Çiçek aranjmanı','Yeşillik',7],['🗿','Küçük heykel','Obje',8]]],
+['giydirme','Elbise ve kombin','👗','Günün en iyi kombinini yap.','Stil',[
+['👗','Şık elbise','Ana parça',11],['👖','Bol kesim pantolon','Ana parça',8],['👚','İpek bluz','Üst giyim',8],['🧥','Uzun trençkot','Dış giyim',10],['👠','Topuklu ayakkabı','Ayakkabı',8],['👟','Beyaz spor ayakkabı','Ayakkabı',7],['👜','Tasarım çanta','Aksesuar',9],['🕶️','Güneş gözlüğü','Aksesuar',6],['🧣','Desenli fular','Tamamlayıcı',6],['👒','Şık şapka','Tamamlayıcı',7]]],
+['taki','Takı koleksiyonu','💍','Işıltılı bir koleksiyon oluştur.','Işıltı',[
+['💍','Pırlanta yüzük','Yüzük',12],['📿','İnci kolye','Kolye',10],['✨','Altın zincir','Kolye',9],['💎','Safir küpeler','Küpe',10],['⭕','Halka küpeler','Küpe',7],['⌚','Zarif kol saati','Saat',9],['🔗','Gümüş bileklik','Bileklik',7],['🧿','Nazar boncuklu bileklik','Bileklik',6],['🌸','Çiçekli broş','Aksesuar',6],['💫','Taşlı saç tokası','Aksesuar',7]]]
+);
+const catalog=groups.map(([id,name,emoji,description,metric,items])=>({id,name,emoji,description,metric,items:items.map(([emoji,name,category,points],i)=>({id:id+'-'+i,emoji,name,category,points}))}));
+if(typeof module!=='undefined'&&module.exports)module.exports=catalog;else root.CATALOG=catalog;
+})(typeof window!=='undefined'?window:globalThis);
