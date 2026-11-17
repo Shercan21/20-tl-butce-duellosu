@@ -1,0 +1,4324 @@
+{
+  "scenes": {
+    "kahvalti": {
+      "file": "assets/scenes/breakfast-table.webp",
+      "single": true
+    },
+    "hayvanat": {
+      "file": "assets/scenes/scene-0.webp",
+      "row": 0,
+      "col": 1
+    },
+    "stadyum": {
+      "file": "assets/scenes/scene-0.webp",
+      "row": 0,
+      "col": 2
+    },
+    "bilgisayar": {
+      "file": "assets/scenes/scene-0.webp",
+      "row": 0,
+      "col": 3
+    },
+    "yatak": {
+      "file": "assets/scenes/scene-0.webp",
+      "row": 1,
+      "col": 0
+    },
+    "oturma": {
+      "file": "assets/scenes/scene-0.webp",
+      "row": 1,
+      "col": 1
+    },
+    "salon": {
+      "file": "assets/scenes/scene-0.webp",
+      "row": 1,
+      "col": 2
+    },
+    "isyeri": {
+      "file": "assets/scenes/scene-0.webp",
+      "row": 1,
+      "col": 3
+    },
+    "mutfak": {
+      "file": "assets/scenes/scene-0.webp",
+      "row": 2,
+      "col": 0
+    },
+    "banyo": {
+      "file": "assets/scenes/scene-0.webp",
+      "row": 2,
+      "col": 1
+    },
+    "oyunodasi": {
+      "file": "assets/scenes/scene-0.webp",
+      "row": 2,
+      "col": 2
+    },
+    "bahce": {
+      "file": "assets/scenes/scene-0.webp",
+      "row": 2,
+      "col": 3
+    },
+    "garaj": {
+      "file": "assets/scenes/scene-0.webp",
+      "row": 3,
+      "col": 0
+    },
+    "kafe": {
+      "file": "assets/scenes/scene-0.webp",
+      "row": 3,
+      "col": 1
+    },
+    "restoran": {
+      "file": "assets/scenes/scene-0.webp",
+      "row": 3,
+      "col": 2
+    },
+    "tatil": {
+      "file": "assets/scenes/scene-0.webp",
+      "row": 3,
+      "col": 3
+    },
+    "kamp": {
+      "file": "assets/scenes/scene-1.webp",
+      "row": 0,
+      "col": 0
+    },
+    "lunapark": {
+      "file": "assets/scenes/scene-1.webp",
+      "row": 0,
+      "col": 1
+    },
+    "akvaryum": {
+      "file": "assets/scenes/scene-1.webp",
+      "row": 0,
+      "col": 2
+    },
+    "uzay": {
+      "file": "assets/scenes/scene-1.webp",
+      "row": 0,
+      "col": 3
+    },
+    "muzik": {
+      "file": "assets/scenes/scene-1.webp",
+      "row": 1,
+      "col": 0
+    },
+    "sinema": {
+      "file": "assets/scenes/scene-1.webp",
+      "row": 1,
+      "col": 1
+    },
+    "spor": {
+      "file": "assets/scenes/scene-1.webp",
+      "row": 1,
+      "col": 2
+    },
+    "okul": {
+      "file": "assets/scenes/scene-1.webp",
+      "row": 1,
+      "col": 3
+    },
+    "cocuk": {
+      "file": "assets/scenes/scene-1.webp",
+      "row": 2,
+      "col": 0
+    },
+    "magaza": {
+      "file": "assets/scenes/scene-1.webp",
+      "row": 2,
+      "col": 1
+    },
+    "otel": {
+      "file": "assets/scenes/scene-1.webp",
+      "row": 2,
+      "col": 2
+    },
+    "sehir": {
+      "file": "assets/scenes/scene-1.webp",
+      "row": 2,
+      "col": 3
+    },
+    "tropik": {
+      "file": "assets/scenes/tropical-island.webp",
+      "single": true
+    },
+    "dekor": {
+      "file": "assets/scenes/scene-1.webp",
+      "row": 3,
+      "col": 1
+    },
+    "giydirme": {
+      "file": "assets/scenes/scene-1.webp",
+      "row": 3,
+      "col": 2
+    },
+    "taki": {
+      "file": "assets/scenes/scene-1.webp",
+      "row": 3,
+      "col": 3
+    }
+  },
+  "items": {
+    "kahvalti-0": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        0,
+        198,
+        203
+      ]
+    },
+    "kahvalti-1": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        0,
+        199,
+        203
+      ]
+    },
+    "kahvalti-2": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        0,
+        198,
+        203
+      ]
+    },
+    "kahvalti-3": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        0,
+        198,
+        203
+      ]
+    },
+    "kahvalti-4": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        0,
+        198,
+        203
+      ]
+    },
+    "kahvalti-5": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        0,
+        199,
+        203
+      ]
+    },
+    "kahvalti-6": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        0,
+        198,
+        203
+      ]
+    },
+    "kahvalti-7": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        0,
+        198,
+        203
+      ]
+    },
+    "kahvalti-8": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        203,
+        198,
+        208
+      ]
+    },
+    "kahvalti-9": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        203,
+        199,
+        208
+      ]
+    },
+    "hayvanat-0": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        203,
+        198,
+        208
+      ]
+    },
+    "hayvanat-1": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        203,
+        198,
+        208
+      ]
+    },
+    "hayvanat-2": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        203,
+        198,
+        208
+      ]
+    },
+    "hayvanat-3": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        203,
+        199,
+        208
+      ]
+    },
+    "hayvanat-4": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        203,
+        198,
+        208
+      ]
+    },
+    "hayvanat-5": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        203,
+        198,
+        208
+      ]
+    },
+    "hayvanat-6": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        411,
+        198,
+        205
+      ]
+    },
+    "hayvanat-7": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        411,
+        199,
+        205
+      ]
+    },
+    "hayvanat-8": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        411,
+        198,
+        205
+      ]
+    },
+    "hayvanat-9": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        411,
+        198,
+        205
+      ]
+    },
+    "stadyum-0": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        411,
+        198,
+        205
+      ]
+    },
+    "stadyum-1": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        411,
+        199,
+        205
+      ]
+    },
+    "stadyum-2": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        411,
+        198,
+        205
+      ]
+    },
+    "stadyum-3": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        411,
+        198,
+        205
+      ]
+    },
+    "stadyum-4": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        616,
+        264,
+        203
+      ]
+    },
+    "stadyum-5": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        264,
+        616,
+        265,
+        203
+      ]
+    },
+    "stadyum-6": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        529,
+        616,
+        264,
+        203
+      ]
+    },
+    "stadyum-7": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        616,
+        264,
+        203
+      ]
+    },
+    "stadyum-8": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1057,
+        616,
+        265,
+        203
+      ]
+    },
+    "stadyum-9": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1322,
+        616,
+        264,
+        203
+      ]
+    },
+    "bilgisayar-0": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        819,
+        159,
+        173
+      ]
+    },
+    "bilgisayar-1": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        159,
+        819,
+        158,
+        173
+      ]
+    },
+    "bilgisayar-2": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        317,
+        819,
+        159,
+        173
+      ]
+    },
+    "bilgisayar-3": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        476,
+        819,
+        158,
+        173
+      ]
+    },
+    "bilgisayar-4": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        634,
+        819,
+        159,
+        173
+      ]
+    },
+    "bilgisayar-5": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        819,
+        159,
+        173
+      ]
+    },
+    "bilgisayar-6": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        952,
+        819,
+        158,
+        173
+      ]
+    },
+    "bilgisayar-7": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1110,
+        819,
+        159,
+        173
+      ]
+    },
+    "bilgisayar-8": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1269,
+        819,
+        158,
+        173
+      ]
+    },
+    "bilgisayar-9": {
+      "file": "assets/items/items-0.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1427,
+        819,
+        159,
+        173
+      ]
+    },
+    "yatak-0": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        0,
+        198,
+        198
+      ]
+    },
+    "yatak-1": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        0,
+        199,
+        198
+      ]
+    },
+    "yatak-2": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        0,
+        198,
+        198
+      ]
+    },
+    "yatak-3": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        0,
+        198,
+        198
+      ]
+    },
+    "yatak-4": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        0,
+        198,
+        198
+      ]
+    },
+    "yatak-5": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        0,
+        199,
+        198
+      ]
+    },
+    "yatak-6": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        0,
+        198,
+        198
+      ]
+    },
+    "yatak-7": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        0,
+        198,
+        198
+      ]
+    },
+    "yatak-8": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        198,
+        198,
+        199
+      ]
+    },
+    "yatak-9": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        198,
+        199,
+        199
+      ]
+    },
+    "oturma-0": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        198,
+        198,
+        199
+      ]
+    },
+    "oturma-1": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        198,
+        198,
+        199
+      ]
+    },
+    "oturma-2": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        198,
+        198,
+        199
+      ]
+    },
+    "oturma-3": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        198,
+        199,
+        199
+      ]
+    },
+    "oturma-4": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        198,
+        198,
+        199
+      ]
+    },
+    "oturma-5": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        198,
+        198,
+        199
+      ]
+    },
+    "oturma-6": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        397,
+        198,
+        198
+      ]
+    },
+    "oturma-7": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        397,
+        199,
+        198
+      ]
+    },
+    "oturma-8": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        397,
+        198,
+        198
+      ]
+    },
+    "oturma-9": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        397,
+        198,
+        198
+      ]
+    },
+    "salon-0": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        397,
+        198,
+        198
+      ]
+    },
+    "salon-1": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        397,
+        199,
+        198
+      ]
+    },
+    "salon-2": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        397,
+        198,
+        198
+      ]
+    },
+    "salon-3": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        397,
+        198,
+        198
+      ]
+    },
+    "salon-4": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        595,
+        198,
+        199
+      ]
+    },
+    "salon-5": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        595,
+        199,
+        199
+      ]
+    },
+    "salon-6": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        595,
+        198,
+        199
+      ]
+    },
+    "salon-7": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        595,
+        198,
+        199
+      ]
+    },
+    "salon-8": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        595,
+        198,
+        199
+      ]
+    },
+    "salon-9": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        595,
+        199,
+        199
+      ]
+    },
+    "isyeri-0": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        595,
+        198,
+        199
+      ]
+    },
+    "isyeri-1": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        595,
+        198,
+        199
+      ]
+    },
+    "isyeri-2": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        794,
+        198,
+        198
+      ]
+    },
+    "isyeri-3": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        794,
+        199,
+        198
+      ]
+    },
+    "isyeri-4": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        794,
+        198,
+        198
+      ]
+    },
+    "isyeri-5": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        794,
+        198,
+        198
+      ]
+    },
+    "isyeri-6": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        794,
+        198,
+        198
+      ]
+    },
+    "isyeri-7": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        794,
+        199,
+        198
+      ]
+    },
+    "isyeri-8": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        794,
+        198,
+        198
+      ]
+    },
+    "isyeri-9": {
+      "file": "assets/items/items-1.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        794,
+        198,
+        198
+      ]
+    },
+    "mutfak-0": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        0,
+        198,
+        198
+      ]
+    },
+    "mutfak-1": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        0,
+        199,
+        198
+      ]
+    },
+    "mutfak-2": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        0,
+        198,
+        198
+      ]
+    },
+    "mutfak-3": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        0,
+        198,
+        198
+      ]
+    },
+    "mutfak-4": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        0,
+        198,
+        198
+      ]
+    },
+    "mutfak-5": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        0,
+        199,
+        198
+      ]
+    },
+    "mutfak-6": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        0,
+        198,
+        198
+      ]
+    },
+    "mutfak-7": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        0,
+        198,
+        198
+      ]
+    },
+    "mutfak-8": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        198,
+        198,
+        199
+      ]
+    },
+    "mutfak-9": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        198,
+        199,
+        199
+      ]
+    },
+    "banyo-0": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        198,
+        198,
+        199
+      ]
+    },
+    "banyo-1": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        198,
+        198,
+        199
+      ]
+    },
+    "banyo-2": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        198,
+        198,
+        199
+      ]
+    },
+    "banyo-3": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        198,
+        199,
+        199
+      ]
+    },
+    "banyo-4": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        198,
+        198,
+        199
+      ]
+    },
+    "banyo-5": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        198,
+        198,
+        199
+      ]
+    },
+    "banyo-6": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        397,
+        198,
+        198
+      ]
+    },
+    "banyo-7": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        397,
+        199,
+        198
+      ]
+    },
+    "banyo-8": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        397,
+        198,
+        198
+      ]
+    },
+    "banyo-9": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        397,
+        198,
+        198
+      ]
+    },
+    "oyunodasi-0": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        397,
+        198,
+        198
+      ]
+    },
+    "oyunodasi-1": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        397,
+        199,
+        198
+      ]
+    },
+    "oyunodasi-2": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        397,
+        198,
+        198
+      ]
+    },
+    "oyunodasi-3": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        397,
+        198,
+        198
+      ]
+    },
+    "oyunodasi-4": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        595,
+        198,
+        199
+      ]
+    },
+    "oyunodasi-5": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        595,
+        199,
+        199
+      ]
+    },
+    "oyunodasi-6": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        595,
+        198,
+        199
+      ]
+    },
+    "oyunodasi-7": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        595,
+        198,
+        199
+      ]
+    },
+    "oyunodasi-8": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        595,
+        198,
+        199
+      ]
+    },
+    "oyunodasi-9": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        595,
+        199,
+        199
+      ]
+    },
+    "bahce-0": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        595,
+        198,
+        199
+      ]
+    },
+    "bahce-1": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        595,
+        198,
+        199
+      ]
+    },
+    "bahce-2": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        794,
+        198,
+        198
+      ]
+    },
+    "bahce-3": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        794,
+        199,
+        198
+      ]
+    },
+    "bahce-4": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        794,
+        198,
+        198
+      ]
+    },
+    "bahce-5": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        794,
+        198,
+        198
+      ]
+    },
+    "bahce-6": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        794,
+        198,
+        198
+      ]
+    },
+    "bahce-7": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        794,
+        199,
+        198
+      ]
+    },
+    "bahce-8": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        794,
+        198,
+        198
+      ]
+    },
+    "bahce-9": {
+      "file": "assets/items/items-2.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        794,
+        198,
+        198
+      ]
+    },
+    "garaj-0": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        0,
+        0,
+        197,
+        200
+      ]
+    },
+    "garaj-1": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        197,
+        0,
+        196,
+        200
+      ]
+    },
+    "garaj-2": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        393,
+        0,
+        197,
+        200
+      ]
+    },
+    "garaj-3": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        590,
+        0,
+        196,
+        200
+      ]
+    },
+    "garaj-4": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        786,
+        0,
+        197,
+        200
+      ]
+    },
+    "garaj-5": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        983,
+        0,
+        196,
+        200
+      ]
+    },
+    "garaj-6": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        1179,
+        0,
+        197,
+        200
+      ]
+    },
+    "garaj-7": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        1376,
+        0,
+        196,
+        200
+      ]
+    },
+    "garaj-8": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        0,
+        200,
+        197,
+        200
+      ]
+    },
+    "garaj-9": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        197,
+        200,
+        196,
+        200
+      ]
+    },
+    "kafe-0": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        393,
+        200,
+        197,
+        200
+      ]
+    },
+    "kafe-1": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        590,
+        200,
+        196,
+        200
+      ]
+    },
+    "kafe-2": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        786,
+        200,
+        197,
+        200
+      ]
+    },
+    "kafe-3": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        983,
+        200,
+        196,
+        200
+      ]
+    },
+    "kafe-4": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        1179,
+        200,
+        197,
+        200
+      ]
+    },
+    "kafe-5": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        1376,
+        200,
+        196,
+        200
+      ]
+    },
+    "kafe-6": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        0,
+        400,
+        197,
+        201
+      ]
+    },
+    "kafe-7": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        197,
+        400,
+        196,
+        201
+      ]
+    },
+    "kafe-8": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        393,
+        400,
+        197,
+        201
+      ]
+    },
+    "kafe-9": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        590,
+        400,
+        196,
+        201
+      ]
+    },
+    "restoran-0": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        786,
+        400,
+        197,
+        201
+      ]
+    },
+    "restoran-1": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        983,
+        400,
+        196,
+        201
+      ]
+    },
+    "restoran-2": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        1179,
+        400,
+        197,
+        201
+      ]
+    },
+    "restoran-3": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        1376,
+        400,
+        196,
+        201
+      ]
+    },
+    "restoran-4": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        0,
+        601,
+        197,
+        200
+      ]
+    },
+    "restoran-5": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        197,
+        601,
+        196,
+        200
+      ]
+    },
+    "restoran-6": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        393,
+        601,
+        197,
+        200
+      ]
+    },
+    "restoran-7": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        590,
+        601,
+        196,
+        200
+      ]
+    },
+    "restoran-8": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        786,
+        601,
+        197,
+        200
+      ]
+    },
+    "restoran-9": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        983,
+        601,
+        196,
+        200
+      ]
+    },
+    "tatil-0": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        1179,
+        601,
+        197,
+        200
+      ]
+    },
+    "tatil-1": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        1376,
+        601,
+        196,
+        200
+      ]
+    },
+    "tatil-2": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        0,
+        801,
+        197,
+        200
+      ]
+    },
+    "tatil-3": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        197,
+        801,
+        196,
+        200
+      ]
+    },
+    "tatil-4": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        393,
+        801,
+        197,
+        200
+      ]
+    },
+    "tatil-5": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        590,
+        801,
+        196,
+        200
+      ]
+    },
+    "tatil-6": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        786,
+        801,
+        197,
+        200
+      ]
+    },
+    "tatil-7": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        983,
+        801,
+        196,
+        200
+      ]
+    },
+    "tatil-8": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        1179,
+        801,
+        197,
+        200
+      ]
+    },
+    "tatil-9": {
+      "file": "assets/items/items-3.webp",
+      "size": [
+        1572,
+        1001
+      ],
+      "rect": [
+        1376,
+        801,
+        196,
+        200
+      ]
+    },
+    "kamp-0": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        0,
+        198,
+        198
+      ]
+    },
+    "kamp-1": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        0,
+        199,
+        198
+      ]
+    },
+    "kamp-2": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        0,
+        198,
+        198
+      ]
+    },
+    "kamp-3": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        0,
+        198,
+        198
+      ]
+    },
+    "kamp-4": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        0,
+        198,
+        198
+      ]
+    },
+    "kamp-5": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        0,
+        199,
+        198
+      ]
+    },
+    "kamp-6": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        0,
+        198,
+        198
+      ]
+    },
+    "kamp-7": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        0,
+        198,
+        198
+      ]
+    },
+    "kamp-8": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        198,
+        198,
+        199
+      ]
+    },
+    "kamp-9": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        198,
+        199,
+        199
+      ]
+    },
+    "lunapark-0": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        198,
+        198,
+        199
+      ]
+    },
+    "lunapark-1": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        198,
+        198,
+        199
+      ]
+    },
+    "lunapark-2": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        198,
+        198,
+        199
+      ]
+    },
+    "lunapark-3": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        198,
+        199,
+        199
+      ]
+    },
+    "lunapark-4": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        198,
+        198,
+        199
+      ]
+    },
+    "lunapark-5": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        198,
+        198,
+        199
+      ]
+    },
+    "lunapark-6": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        397,
+        198,
+        198
+      ]
+    },
+    "lunapark-7": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        397,
+        199,
+        198
+      ]
+    },
+    "lunapark-8": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        397,
+        198,
+        198
+      ]
+    },
+    "lunapark-9": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        397,
+        198,
+        198
+      ]
+    },
+    "akvaryum-0": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        397,
+        198,
+        198
+      ]
+    },
+    "akvaryum-1": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        397,
+        199,
+        198
+      ]
+    },
+    "akvaryum-2": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        397,
+        198,
+        198
+      ]
+    },
+    "akvaryum-3": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        397,
+        198,
+        198
+      ]
+    },
+    "akvaryum-4": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        595,
+        198,
+        199
+      ]
+    },
+    "akvaryum-5": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        595,
+        199,
+        199
+      ]
+    },
+    "akvaryum-6": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        595,
+        198,
+        199
+      ]
+    },
+    "akvaryum-7": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        595,
+        198,
+        199
+      ]
+    },
+    "akvaryum-8": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        595,
+        198,
+        199
+      ]
+    },
+    "akvaryum-9": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        595,
+        199,
+        199
+      ]
+    },
+    "uzay-0": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        595,
+        198,
+        199
+      ]
+    },
+    "uzay-1": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        595,
+        198,
+        199
+      ]
+    },
+    "uzay-2": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        794,
+        198,
+        198
+      ]
+    },
+    "uzay-3": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        794,
+        199,
+        198
+      ]
+    },
+    "uzay-4": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        794,
+        198,
+        198
+      ]
+    },
+    "uzay-5": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        794,
+        198,
+        198
+      ]
+    },
+    "uzay-6": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        794,
+        198,
+        198
+      ]
+    },
+    "uzay-7": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        794,
+        199,
+        198
+      ]
+    },
+    "uzay-8": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        794,
+        198,
+        198
+      ]
+    },
+    "uzay-9": {
+      "file": "assets/items/items-4.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        794,
+        198,
+        198
+      ]
+    },
+    "muzik-0": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        0,
+        198,
+        198
+      ]
+    },
+    "muzik-1": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        0,
+        199,
+        198
+      ]
+    },
+    "muzik-2": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        0,
+        198,
+        198
+      ]
+    },
+    "muzik-3": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        0,
+        198,
+        198
+      ]
+    },
+    "muzik-4": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        0,
+        198,
+        198
+      ]
+    },
+    "muzik-5": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        0,
+        199,
+        198
+      ]
+    },
+    "muzik-6": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        0,
+        198,
+        198
+      ]
+    },
+    "muzik-7": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        0,
+        198,
+        198
+      ]
+    },
+    "muzik-8": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        198,
+        198,
+        199
+      ]
+    },
+    "muzik-9": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        198,
+        199,
+        199
+      ]
+    },
+    "sinema-0": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        198,
+        198,
+        199
+      ]
+    },
+    "sinema-1": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        198,
+        198,
+        199
+      ]
+    },
+    "sinema-2": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        198,
+        198,
+        199
+      ]
+    },
+    "sinema-3": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        198,
+        199,
+        199
+      ]
+    },
+    "sinema-4": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        198,
+        198,
+        199
+      ]
+    },
+    "sinema-5": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        198,
+        198,
+        199
+      ]
+    },
+    "sinema-6": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        397,
+        198,
+        198
+      ]
+    },
+    "sinema-7": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        397,
+        199,
+        198
+      ]
+    },
+    "sinema-8": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        397,
+        198,
+        198
+      ]
+    },
+    "sinema-9": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        397,
+        198,
+        198
+      ]
+    },
+    "spor-0": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        397,
+        198,
+        198
+      ]
+    },
+    "spor-1": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        397,
+        199,
+        198
+      ]
+    },
+    "spor-2": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        397,
+        198,
+        198
+      ]
+    },
+    "spor-3": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        397,
+        198,
+        198
+      ]
+    },
+    "spor-4": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        595,
+        198,
+        199
+      ]
+    },
+    "spor-5": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        595,
+        199,
+        199
+      ]
+    },
+    "spor-6": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        595,
+        198,
+        199
+      ]
+    },
+    "spor-7": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        595,
+        198,
+        199
+      ]
+    },
+    "spor-8": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        595,
+        198,
+        199
+      ]
+    },
+    "spor-9": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        595,
+        199,
+        199
+      ]
+    },
+    "okul-0": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        794,
+        159,
+        198
+      ]
+    },
+    "okul-1": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        159,
+        794,
+        158,
+        198
+      ]
+    },
+    "okul-2": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        317,
+        794,
+        159,
+        198
+      ]
+    },
+    "okul-3": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        476,
+        794,
+        158,
+        198
+      ]
+    },
+    "okul-4": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        634,
+        794,
+        159,
+        198
+      ]
+    },
+    "okul-5": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        794,
+        159,
+        198
+      ]
+    },
+    "okul-6": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        952,
+        794,
+        158,
+        198
+      ]
+    },
+    "okul-7": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1110,
+        794,
+        159,
+        198
+      ]
+    },
+    "okul-8": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1269,
+        794,
+        158,
+        198
+      ]
+    },
+    "okul-9": {
+      "file": "assets/items/items-5.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1427,
+        794,
+        159,
+        198
+      ]
+    },
+    "cocuk-0": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        0,
+        198,
+        198
+      ]
+    },
+    "cocuk-1": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        0,
+        199,
+        198
+      ]
+    },
+    "cocuk-2": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        0,
+        198,
+        198
+      ]
+    },
+    "cocuk-3": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        0,
+        198,
+        198
+      ]
+    },
+    "cocuk-4": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        0,
+        198,
+        198
+      ]
+    },
+    "cocuk-5": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        0,
+        199,
+        198
+      ]
+    },
+    "cocuk-6": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        0,
+        198,
+        198
+      ]
+    },
+    "cocuk-7": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        0,
+        198,
+        198
+      ]
+    },
+    "cocuk-8": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        198,
+        198,
+        199
+      ]
+    },
+    "cocuk-9": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        198,
+        199,
+        199
+      ]
+    },
+    "magaza-0": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        198,
+        198,
+        199
+      ]
+    },
+    "magaza-1": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        198,
+        198,
+        199
+      ]
+    },
+    "magaza-2": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        198,
+        198,
+        199
+      ]
+    },
+    "magaza-3": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        198,
+        199,
+        199
+      ]
+    },
+    "magaza-4": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        198,
+        198,
+        199
+      ]
+    },
+    "magaza-5": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        198,
+        198,
+        199
+      ]
+    },
+    "magaza-6": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        397,
+        198,
+        198
+      ]
+    },
+    "magaza-7": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        397,
+        199,
+        198
+      ]
+    },
+    "magaza-8": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        397,
+        198,
+        198
+      ]
+    },
+    "magaza-9": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        397,
+        198,
+        198
+      ]
+    },
+    "otel-0": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        397,
+        198,
+        198
+      ]
+    },
+    "otel-1": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        397,
+        199,
+        198
+      ]
+    },
+    "otel-2": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        397,
+        198,
+        198
+      ]
+    },
+    "otel-3": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        397,
+        198,
+        198
+      ]
+    },
+    "otel-4": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        595,
+        198,
+        199
+      ]
+    },
+    "otel-5": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        595,
+        199,
+        199
+      ]
+    },
+    "otel-6": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        595,
+        198,
+        199
+      ]
+    },
+    "otel-7": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        595,
+        198,
+        199
+      ]
+    },
+    "otel-8": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        595,
+        198,
+        199
+      ]
+    },
+    "otel-9": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        595,
+        199,
+        199
+      ]
+    },
+    "sehir-0": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        595,
+        198,
+        199
+      ]
+    },
+    "sehir-1": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        595,
+        198,
+        199
+      ]
+    },
+    "sehir-2": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        794,
+        198,
+        198
+      ]
+    },
+    "sehir-3": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        794,
+        199,
+        198
+      ]
+    },
+    "sehir-4": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        794,
+        198,
+        198
+      ]
+    },
+    "sehir-5": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        794,
+        198,
+        198
+      ]
+    },
+    "sehir-6": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        794,
+        198,
+        198
+      ]
+    },
+    "sehir-7": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        794,
+        199,
+        198
+      ]
+    },
+    "sehir-8": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        794,
+        198,
+        198
+      ]
+    },
+    "sehir-9": {
+      "file": "assets/items/items-6.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        794,
+        198,
+        198
+      ]
+    },
+    "tropik-0": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        0,
+        198,
+        198
+      ]
+    },
+    "tropik-1": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        0,
+        199,
+        198
+      ]
+    },
+    "tropik-2": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        0,
+        198,
+        198
+      ]
+    },
+    "tropik-3": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        0,
+        198,
+        198
+      ]
+    },
+    "tropik-4": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        0,
+        198,
+        198
+      ]
+    },
+    "tropik-5": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        0,
+        199,
+        198
+      ]
+    },
+    "tropik-6": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        0,
+        198,
+        198
+      ]
+    },
+    "tropik-7": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        0,
+        198,
+        198
+      ]
+    },
+    "tropik-8": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        198,
+        198,
+        199
+      ]
+    },
+    "tropik-9": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        198,
+        199,
+        199
+      ]
+    },
+    "dekor-0": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        198,
+        198,
+        199
+      ]
+    },
+    "dekor-1": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        198,
+        198,
+        199
+      ]
+    },
+    "dekor-2": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        198,
+        198,
+        199
+      ]
+    },
+    "dekor-3": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        198,
+        199,
+        199
+      ]
+    },
+    "dekor-4": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        198,
+        198,
+        199
+      ]
+    },
+    "dekor-5": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        198,
+        198,
+        199
+      ]
+    },
+    "dekor-6": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        397,
+        198,
+        198
+      ]
+    },
+    "dekor-7": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        397,
+        199,
+        198
+      ]
+    },
+    "dekor-8": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        397,
+        198,
+        198
+      ]
+    },
+    "dekor-9": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        397,
+        198,
+        198
+      ]
+    },
+    "giydirme-0": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        397,
+        198,
+        198
+      ]
+    },
+    "giydirme-1": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        397,
+        199,
+        198
+      ]
+    },
+    "giydirme-2": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        397,
+        198,
+        198
+      ]
+    },
+    "giydirme-3": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        397,
+        198,
+        198
+      ]
+    },
+    "giydirme-4": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        595,
+        198,
+        199
+      ]
+    },
+    "giydirme-5": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        595,
+        199,
+        199
+      ]
+    },
+    "giydirme-6": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        595,
+        198,
+        199
+      ]
+    },
+    "giydirme-7": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        595,
+        198,
+        199
+      ]
+    },
+    "giydirme-8": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        595,
+        198,
+        199
+      ]
+    },
+    "giydirme-9": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        595,
+        199,
+        199
+      ]
+    },
+    "taki-0": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        595,
+        198,
+        199
+      ]
+    },
+    "taki-1": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        595,
+        198,
+        199
+      ]
+    },
+    "taki-2": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        0,
+        794,
+        198,
+        198
+      ]
+    },
+    "taki-3": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        198,
+        794,
+        199,
+        198
+      ]
+    },
+    "taki-4": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        397,
+        794,
+        198,
+        198
+      ]
+    },
+    "taki-5": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        595,
+        794,
+        198,
+        198
+      ]
+    },
+    "taki-6": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        793,
+        794,
+        198,
+        198
+      ]
+    },
+    "taki-7": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        991,
+        794,
+        199,
+        198
+      ]
+    },
+    "taki-8": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1190,
+        794,
+        198,
+        198
+      ]
+    },
+    "taki-9": {
+      "file": "assets/items/items-7.webp",
+      "size": [
+        1586,
+        992
+      ],
+      "rect": [
+        1388,
+        794,
+        198,
+        198
+      ]
+    }
+  }
+}

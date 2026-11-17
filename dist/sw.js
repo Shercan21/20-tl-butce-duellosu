@@ -1,5 +1,6 @@
-const CACHE='butce-duellosu-online1';
-const FILES=['./','./index.html','./style.css?v=online1','./catalog.js?v=online1','./game.js?v=online1','./online.js?v=online1','./app.js?v=online1','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png'];
+const CACHE='butce-duellosu-scenes1';
+const ART=['./assets/scenes/scene-0.webp','./assets/scenes/scene-1.webp','./assets/scenes/tropical-island.webp','./assets/scenes/breakfast-table.webp',...Array.from({length:8},(_,i)=>'./assets/items/items-'+i+'.webp')];
+const FILES=['./','./index.html','./style.css?v=scenes1','./scenes.css?v=scenes1','./catalog.js?v=scenes1','./game.js?v=scenes1','./art-map.js?v=scenes1','./visuals.js?v=scenes1','./online.js?v=scenes1','./app.js?v=scenes1','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png',...ART];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('butce-duellosu-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',e=>{

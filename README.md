@@ -7,7 +7,7 @@ Türkçe, mobil uyumlu, çevrimdışı çalışabilen bir açık artırma PWA oy
 ## Oynanış
 
 - Her kategoride her oyuncu 20 TL oyun bütçesiyle başlar.
-- 10 ürün için gizli, tam sayı teklifler verilir. Yalnızca kazanan kendi teklifini öder.
+- Her kategori 10 farklı ürün türü içerir. Tur sayısı katılan oyuncu sayısının 5 katıdır: 2 kişide 10, 4 kişide 20, 8 kişide 40 tur. Ürünler karıştırılır ve tekrar turlarında farklı kopyaları çıkabilir. Gizli, tam sayı teklifler verilir. Yalnızca kazanan kendi teklifini öder.
 - Sıfır teklif pas demektir; herkes pas geçerse ürün alınmaz.
 - Eşit pozitif teklifte öncelik tur numarasına göre oyuncular arasında döner. En yüksek teklifi verenler arasından bu döngüde ilk sırada olan kazanır.
 - Ürün puanlarına her farklı ürün grubu için 2 puan eklenir. Eşit puanda kalan bütçe belirleyicidir.
@@ -16,11 +16,11 @@ Türkçe, mobil uyumlu, çevrimdışı çalışabilen bir açık artırma PWA oy
 
 ## Kategoriler
 
-Yatak odası, oturma odası, misafir salonu, işyeri, dekor, elbise ve kombin, takı, bilgisayar, futbol stadyumu, hayvanat bahçesi, kahvaltı, mutfak, banyo, çocuk odası, oyun odası, bahçe, garaj, kafe, restoran, mağaza, otel, tatil, kamp, lunapark, akvaryum, uzay üssü, müzik stüdyosu, ev sineması, spor salonu, sınıf ve şehir kurma. Her kategoride 10 farklı ürün bulunur.
+Tropik ada, yatak odası, oturma odası, misafir salonu, işyeri, dekor, elbise ve kombin, takı, bilgisayar, futbol stadyumu, hayvanat bahçesi, kahvaltı, mutfak, banyo, çocuk odası, oyun odası, bahçe, garaj, kafe, restoran, mağaza, otel, tatil, kamp, lunapark, akvaryum, uzay üssü, müzik stüdyosu, ev sineması, spor salonu, sınıf ve şehir kurma. Her kategoride 10 farklı ürün bulunur.
 
 ## Çalıştırma
 
-Node.js ile `node server.cjs`, ardından tarayıcıda http://127.0.0.1:4187 adresini açın. Kurulum veya paket indirme gerekmez. Otomatik kontroller: `node --test tests/game.test.cjs tests/online.test.cjs`.
+Node.js ile `node server.cjs`, ardından tarayıcıda http://127.0.0.1:4187 adresini açın. Kurulum veya paket indirme gerekmez. Otomatik kontroller: `node --test tests/game.test.cjs tests/online.test.cjs tests/visuals.test.cjs`.
 
 `dist/` doğrudan statik sunucuda yayınlanabilir. Alt dizinlere uyumludur (örneğin GitHub Pages). PWA kurulumu ve servis çalışanı için HTTPS veya localhost gereklidir; dosyayı çift tıklayarak açmak yeterli değildir.
 
@@ -44,3 +44,11 @@ Android Chrome: menü → Ana ekrana ekle / Uygulamayı yükle. iOS Safari: Payl
 Sayfa yenilenince Çevrimiçi odama dön ile devam edilir. Odalar 24 saat geçerlidir. Oda kurulduktan sonra kapasite sabittir, oyun başlayınca yeni oyuncu katılamaz. Menüye dönmek odayı kapatmaz. Odadan ayrıl düğmesi odadaki oyunu herkes için kapatır.
 
 `online-server/worker.mjs` sunucu mantığı, `online-server/drizzle/` şema geçişleri, `online-server/build.cjs` bağımlılıksız sunucu paketleyicisidir. Yerel otomatik sunucu testleri Node.js 22.13+ SQLite API kullanır. Yayında `DB` adlı D1 bağlantısı gerekir. İstekler 1,5 saniyelik aralıklarla eşitlenir; gizli sekmelerde aralık 8 saniyedir. Eşzamanlı değişiklikler sürüm denetimiyle atomik olarak uygulanır.
+
+## Canlı görsel sahneler
+
+32 kategori için gerçek resimlerden oluşan arka planlar ve 320 ürün görseli vardır. Kahvaltıda yiyecekler ahşap masaya, odalarda eşyalar zemine ve duvarlara, tropik adada palmiye, muz ağacı ve maymun kumsala yerleşir. Satın alınmayan ürün sahnede görünmez. Aynı türün ikinci kopyası ayrı konuma yerleşir. Sahnedeki büyüt düğmesi ayrıntılı görünümü açar. Azaltılmış hareket tercihi desteklenir.
+
+Görseller `dist/assets/`, yerleştirme sistemi `dist/visuals.js`, eşleme dosyası `dist/art-map.js` içindedir. Görseller yerleşik görüntü üretim aracıyla üretildi; `artwork/prompts.json` üretim istemlerini, `artwork/manifest.json` görsel eşlemesini içerir. WebP optimizasyonu alfa saydamlığını korur. Orijinal referans görsel kullanıcıya aittir ve bu depoya kopyalanmadı.
+
+Masaüstü kopyasındaki **Oyunu Aç.url** dosyası yayındaki oyunu açar. Yerel çalıştırmak için `node server.cjs` kullanılır.

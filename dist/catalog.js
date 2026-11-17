@@ -58,6 +58,8 @@ const groups=[
 ['🏘️','Rahat konutlar','Yaşam',11],['🏥','Modern hastane','Hizmet',10],['🏫','İyi okullar','Eğitim',10],['🌳','Büyük şehir parkı','Doğa',8],['🚇','Metro ağı','Ulaşım',11],['🎭','Kültür merkezi','Kültür',8],['🚲','Bisiklet yolları','Ulaşım',7],['☀️','Temiz enerji tesisi','Altyapı',9],['📚','Halk kütüphanesi','Eğitim',7],['💧','Temiz su sistemi','Altyapı',10]]]
 ];
 groups.push(
+['tropik','Tropik ada','🏝️','Palmiye, muz ve maymunlarla adanı canlandır.','Cennet',[
+['🌴','Hindistan cevizi palmiyesi','Bitkiler',9],['🍌','Muz ağacı','Bitkiler',9],['🐒','Sevimli maymun','Canlılar',11],['🧺','Muz sepeti','Lezzet',7],['🛖','Bambu kulübe','Barınak',10],['🦜','Renkli papağan','Canlılar',8],['🌺','Tropik çiçekler','Bitkiler',6],['🛌','Palmiye hamağı','Keyif',8],['🚣','Ahşap kano','Macera',8],['🥥','Hindistan cevizi içeceği','Lezzet',6]]],
 ['dekor','Dekor ve aksesuar','🏺','Mekana kendi imzanı at.','Uyum',[
 ['🖼️','Büyük sanat tablosu','Duvar',10],['🪞','Tasarım ayna','Duvar',9],['🏺','Seramik vazo','Obje',7],['🕯️','Kokulu mum seti','Atmosfer',6],['🪴','Büyük salon bitkisi','Yeşillik',8],['💡','Heykel formunda lamba','Aydınlatma',9],['🧶','Dokuma kilim','Tekstil',8],['🛋️','Dekoratif yastıklar','Tekstil',6],['🪷','Çiçek aranjmanı','Yeşillik',7],['🗿','Küçük heykel','Obje',8]]],
 ['giydirme','Elbise ve kombin','👗','Günün en iyi kombinini yap.','Stil',[
