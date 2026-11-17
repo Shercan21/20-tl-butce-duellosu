@@ -1,5 +1,7 @@
 # 20 TL — Bütçe Düellosu
 
+**[Oyunu oyna](https://shercan21.github.io/20-tl-butce-duellosu/)**
+
 Türkçe, mobil uyumlu, çevrimdışı çalışabilen bir açık artırma PWA oyunu. Aynı cihazda iki kişiyle veya gizli teklifini önceden belirleyen bilgisayara karşı oynanır. Gerçek para, ödeme veya hesap gerekmez.
 
 ## Oynanış
