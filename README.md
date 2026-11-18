@@ -47,8 +47,14 @@ Sayfa yenilenince Çevrimiçi odama dön ile devam edilir. Odalar 24 saat geçer
 
 ## Canlı görsel sahneler
 
-32 kategori için gerçek resimlerden oluşan arka planlar ve 320 ürün görseli vardır. Kahvaltıda yiyecekler ahşap masaya, odalarda eşyalar zemine ve duvarlara, tropik adada palmiye, muz ağacı ve maymun kumsala yerleşir. Satın alınmayan ürün sahnede görünmez. Aynı türün ikinci kopyası ayrı konuma yerleşir. Sahnedeki büyüt düğmesi ayrıntılı görünümü açar. Azaltılmış hareket tercihi desteklenir.
+32 kategori için gerçek resimlerden oluşan arka planlar ve 320 ürün görseli vardır. Kahvaltıda yiyecekler ahşap masaya, odalarda eşyalar zemine ve duvarlara, tropik adada palmiye, muz ağacı ve maymun kumsala yerleşir. Satın alınmayan ürün sahnede görünmez. Aynı türün kopyaları tek görsel ve adet etiketiyle gösterilir. Ürünler sayıya göre büyüyüp küçülen, aralıklı ve çakışmayan yerlere dizilir. Sahnedeki büyüt düğmesi ayrıntılı görünümü açar. Azaltılmış hareket tercihi desteklenir.
 
 Görseller `dist/assets/`, yerleştirme sistemi `dist/visuals.js`, eşleme dosyası `dist/art-map.js` içindedir. Görseller yerleşik görüntü üretim aracıyla üretildi; `artwork/prompts.json` üretim istemlerini, `artwork/manifest.json` görsel eşlemesini içerir. WebP optimizasyonu alfa saydamlığını korur. Orijinal referans görsel kullanıcıya aittir ve bu depoya kopyalanmadı.
 
 Masaüstü kopyasındaki **Oyunu Aç.url** dosyası yayındaki oyunu açar. Yerel çalıştırmak için `node server.cjs` kullanılır.
+
+## Derinlikli sahne yerleşimi
+
+Canlı özgün ürün görselleri korunur. Bunlar perspektif kamerada fiziksel konumlara sabitlenmiş, kameraya dönen görsel panolar olarak çizilir; tüm ürünler hacimli model değildir. Zeminler, kahvaltı masası, stadyum sahası, tribün basamakları, koltuklar ve kale gibi yapısal parçalar 3B geometridir. Çim satın alınmadan yeşil saha oluşmaz, koltuklar yalnızca tribün bölgelerine yerleşir. Mobilyalar odada belirlenmiş alanlara gider. Aynı türün kopyaları adet etiketiyle gösterilir. Sürükleyerek döndürme, yakınlaştırma, uzaklaştırma ve kamerayı sıfırlama kontrolleri vardır. WebGL 2 destekli güncel tarayıcı gereklidir.
+
+Three.js 0.187.0 dosyaları ve lisansı `dist/vendor/` içinde yereldir. Görünür sahneler için çizici açılır; ekran dışına çıkan sahnelerin GPU kaynakları bırakılır. `dist/photo-world.js` görsel malzemeleri ve yapıları, `dist/scene-plan.js` kategori alanlarını, `dist/world-3d.js` kamera ve yaşam döngüsünü yönetir.

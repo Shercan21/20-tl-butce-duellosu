@@ -6,3 +6,6 @@ node_modules/
 online-server/build/
 *.local.json
 dist/qa-scenes.html
+dist/qa-stadium.html
+artwork/*prototype*
+artwork/*.local.*
