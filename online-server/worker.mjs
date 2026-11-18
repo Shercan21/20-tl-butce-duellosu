@@ -46,7 +46,7 @@ async function bodyJSON(request){if(Number(request.headers.get('Content-Length')
 async function readRoom(db,key){const row=await db.prepare('SELECT payload, rev, expires_at FROM online_rooms WHERE code = ?').bind(key).first();if(!row||row.expires_at<Date.now())fail(404,'Oda bulunamadı veya süresi doldu. Kodu kontrol et.');return {row,room:JSON.parse(row.payload)};}
 async function handle(request,env){
  const url=new URL(request.url),path=url.pathname;
- if(path==='/health')return {ok:true,version:'design-score-2'};
+ if(path==='/health')return {ok:true,version:'design-score-3'};
  if(!env.DB)fail(503,'Oyun sunucusu hazırlanıyor. Biraz sonra tekrar dene.');
  if(path==='/v1/rooms'&&request.method==='POST'){
   const b=await bodyJSON(request);if(!catalog.some(t=>t.id===b.theme)||!['random','ordered'].includes(b.order))fail(400,'Geçerli bir kategori seç.');

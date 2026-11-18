@@ -47,7 +47,7 @@ function evaluate(player,theme,catalog,plan){
  let functionality=Math.round(complete.length/p.combinations.length*20);
  const placements=player.placements||{},layout=plan.plan(theme,[...owned.values()]),at=id=>{const d=layout.find(p=>p.index===id);return d?{...d,...placements[d.id]}:null;};
  // Functional relationships matter as well as ownership.
- if(theme==='sinema'&&ids.has(0)&&ids.has(4)){const screen=at(4),projector=at(0),seats=at(2);if(projector.z<screen.z+2||(seats&&seats.z<screen.z+2))functionality=0;}
+ if(theme==='sinema'&&ids.has(0)&&ids.has(4)){const screen=at(4),projector=at(0),seats=at(2);const faces=(item)=>Math.cos(((item.r||0)-Math.atan2(item.x-screen.x,item.z-screen.z)*180/Math.PI)*Math.PI/180)>.7;if(projector.z<screen.z+2||!faces(projector))functionality=0;else if(seats&&(seats.z<screen.z+2||!faces(seats)))functionality=Math.max(0,functionality-7);}
  let collisions=0;for(let i=0;i<layout.length;i++)for(let j=i+1;j<layout.length;j++){const a=layout[i],b=layout[j];if(!placements[a.id]&&!placements[b.id])continue;if(a.mount!=='ground'||b.mount!=='ground'||['rug','linen','pillow','bananas','monkey'].includes(a.type)||['rug','linen','pillow','bananas','monkey'].includes(b.type))continue;const pa={...a,...placements[a.id]},pb={...b,...placements[b.id]};if(Math.hypot(pa.x-pb.x,pa.z-pb.z)<Math.min(1.3,(a.width+b.width)*.22))collisions++;}
  const visual=Math.max(0,Math.round(p.visual.filter(g=>g.some(i=>ids.has(i))).length/3*15)-Math.min(10,collisions*3));
  const variety=Math.round(new Set([...owned.values()].map(it=>it.category)).size/new Set(t.items.map(it=>it.category)).size*10),savings=owned.size?Math.floor(Math.max(0,Math.min(20,player.money))/4):0;

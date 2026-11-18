@@ -1,0 +1,11 @@
+(()=>{
+'use strict';
+const category=document.querySelector('#theme'),products=document.querySelector('#products'),status=document.querySelector('#design-status'),KEY='butce-design-preview-v1';let designs={};try{designs=JSON.parse(localStorage.getItem(KEY))||{};}catch{}
+category.innerHTML=CATALOG.map(t=>`<option value="${t.id}">${t.name}</option>`).join('');category.value='sinema';
+const current=()=>CATALOG.find(t=>t.id===category.value);
+function render(){const t=current(),choice=products.value,items=choice==='all'?t.items:choice==='empty'?[]:t.items.filter(it=>choice==='cinema-set'?['sinema-0','sinema-4'].includes(it.id):it.id===choice);document.querySelector('#stage').innerHTML=Visuals.scene(t.id,items,'design',true,{owner:'design-'+t.id,editable:true,placements:designs[t.id]||{},money:20});document.querySelector('#design-description').textContent=t.id==='sinema'?'Önde perde, ona dönük koltuklar, iki yanda ses sistemi. Perde ve projektör birlikte alınınca hareketli kısa film başlar.':'Eşyayı seçmek için dokun. Düzenleme modunda sürükleyerek taşı, ↶ ↷ ile yönünü değiştir.';status.textContent='';}
+function updateProducts(){const t=current();products.innerHTML='<option value="all">Tüm ürünler</option><option value="empty">Boş mekân</option>'+t.items.map(it=>`<option value="${it.id}">${it.name}</option>`).join('')+(t.id==='sinema'?'<option value="cinema-set">Sinema perdesi + 4K projeksiyon</option>':'');render();}
+category.onchange=updateProducts;products.onchange=render;document.querySelector('#reset-design').onclick=()=>{delete designs[current().id];try{localStorage.setItem(KEY,JSON.stringify(designs));}catch{}render();status.textContent='Bu kategorinin ilk düzenine dönüldü.';};
+document.addEventListener('world-placement',e=>{const t=current();if(e.detail.owner!=='design-'+t.id)return;const p={items:t.items,money:20,placements:designs[t.id]||{}};try{Breakfast.moveItem(p,t.id,e.detail.itemId,e.detail.placement);designs[t.id]=p.placements;localStorage.setItem(KEY,JSON.stringify(designs));status.textContent=t.items.find(it=>it.id===e.detail.itemId).name+' — konumu ve yönü kaydedildi.';}catch{status.textContent='Bu eşya burada yerleştirilemiyor.';}});
+updateProducts();
+})();
