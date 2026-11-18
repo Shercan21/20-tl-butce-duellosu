@@ -13,7 +13,7 @@ const roundKey=r=>`${r.index}:${r.game.round}:${r.game.stage}`;
 function equal(a,b){if(!a||!b||a.length!==b.length)return false;let diff=0;for(let i=0;i<a.length;i++)diff|=a.charCodeAt(i)^b.charCodeAt(i);return diff===0;}
 function freshGame(id,count=2){return rules.createGame('online',random,catalog.find(t=>t.id===id),count);}
 function freshRoom(theme,order,hostHash,maxPlayers=2){const ids=catalog.map(t=>t.id),idx=ids.indexOf(theme);return {status:'waiting',tokens:[hostHash],maxPlayers,index:0,order,startTheme:theme,queue:order==='random'?[theme,...shuffle(ids.filter(id=>id!==theme))]:[...ids.slice(idx),...ids.slice(0,idx)],results:[],game:freshGame(theme),ready:[false,false]};}
-export function view(room,role,roomCode,rev){const g=room.game;return {code:roomCode,rev,role,status:room.status,maxPlayers:room.maxPlayers,joinedCount:room.tokens.length,expiresAt:room.expiresAt,index:room.index,order:room.order,queue:room.queue,results:room.results,ready:room.ready,submitted:g.bids.map(b=>b!==null),turnKey:roundKey(room),game:{version:g.version,mode:'online',themeId:g.themeId,round:g.round,deck:g.deck.map((x,i)=>i<=g.round?x:null),players:g.players,history:g.history,stage:g.stage,bids:g.stage==='reveal'?[...g.bids]:Array(g.players.length).fill(null)}};}
+export function view(room,role,roomCode,rev){const g=room.game;return {code:roomCode,rev,role,status:room.status,maxPlayers:room.maxPlayers,joinedCount:room.tokens.length,expiresAt:room.expiresAt,index:room.index,order:room.order,queue:room.queue,results:room.results,ready:room.ready,submitted:g.bids.map(b=>b!==null),turnKey:roundKey(room),game:{version:g.version,scoringVersion:2,mode:'online',themeId:g.themeId,round:g.round,deck:g.deck.map((x,i)=>i<=g.round?x:null),players:g.players,scores:g.players.map(p=>rules.score(p,g.themeId)),winner:g.stage==='finished'?rules.winner(g):undefined,history:g.history,stage:g.stage,bids:g.stage==='reveal'?[...g.bids]:Array(g.players.length).fill(null)}};}
 export function applyAction(room,role,action,body){
  if(room.status==='closed')fail(410,'Bu oda kapatıldı. Yeni bir oda açabilirsin.');
  if(action==='leave'){room.status='closed';return;}
@@ -21,6 +21,7 @@ export function applyAction(room,role,action,body){
  if(room.status!=='active')fail(409,'Oyuncuların katılması bekleniyor.');
  const g=room.game;
  if(body.turnKey!==roundKey(room))return; // Delayed retries cannot affect a later round.
+ if(action==='place'){if(g.stage==='finished')fail(409,'Sonuçlar kesinleşti; yeni kategoride düzenleyebilirsin.');if(room.ready[role])fail(409,'Hazır olduğunu onayladıktan sonra eşya taşınamaz.');try{rules.moveItem(g.players[role],g.themeId,body.itemId,body.placement);}catch(e){fail(400,e.message);}return;}
  if(action==='bid'){
   if(g.stage!=='bid')return;
   const b=body.bid;if(!Number.isInteger(b)||b<0||b>g.players[role].money)fail(400,'Teklifin kalan bütçeni aşamaz.');
@@ -45,7 +46,7 @@ async function bodyJSON(request){if(Number(request.headers.get('Content-Length')
 async function readRoom(db,key){const row=await db.prepare('SELECT payload, rev, expires_at FROM online_rooms WHERE code = ?').bind(key).first();if(!row||row.expires_at<Date.now())fail(404,'Oda bulunamadı veya süresi doldu. Kodu kontrol et.');return {row,room:JSON.parse(row.payload)};}
 async function handle(request,env){
  const url=new URL(request.url),path=url.pathname;
- if(path==='/health')return {ok:true,version:'online-1'};
+ if(path==='/health')return {ok:true,version:'design-score-2'};
  if(!env.DB)fail(503,'Oyun sunucusu hazırlanıyor. Biraz sonra tekrar dene.');
  if(path==='/v1/rooms'&&request.method==='POST'){
   const b=await bodyJSON(request);if(!catalog.some(t=>t.id===b.theme)||!['random','ordered'].includes(b.order))fail(400,'Geçerli bir kategori seç.');
@@ -55,7 +56,7 @@ async function handle(request,env){
   for(let attempt=0;attempt<5;attempt++){const key=code();const result=await env.DB.prepare('INSERT OR IGNORE INTO online_rooms(code,payload,rev,expires_at) VALUES(?,?,0,?)').bind(key,JSON.stringify(room),room.expiresAt).run();if(result.meta.changes)return {token:secret,state:view(room,0,key,0)};}
   fail(503,'Oda açılamadı. Tekrar dene.');
  }
- const match=path.match(/^\/v1\/rooms\/([A-Z2-9]{8})(?:\/(join|start|bid|advance|leave))?$/);if(!match)fail(404,'Adres bulunamadı.');
+ const match=path.match(/^\/v1\/rooms\/([A-Z2-9]{8})(?:\/(join|start|bid|advance|leave|place))?$/);if(!match)fail(404,'Adres bulunamadı.');
  const [,key,action]=match;
  if((!action&&request.method!=='GET')||(action&&request.method!=='POST'))fail(405,'Geçersiz işlem.');
  const b=action?await bodyJSON(request):{};

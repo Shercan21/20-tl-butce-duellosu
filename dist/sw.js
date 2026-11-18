@@ -1,6 +1,6 @@
-const CACHE='butce-duellosu-world3d1';
+const CACHE='butce-duellosu-layouts2';
 const ART=['./assets/scenes/scene-0.webp','./assets/scenes/scene-1.webp','./assets/scenes/tropical-island.webp','./assets/scenes/breakfast-table.webp',...Array.from({length:8},(_,i)=>'./assets/items/items-'+i+'.webp')];
-const FILES=['./','./index.html','./style.css?v=world3d1','./scenes.css?v=world3d1','./catalog.js?v=world3d1','./game.js?v=world3d1','./art-map.js?v=world3d1','./scene-plan.js?v=world3d1','./visuals.js?v=world3d1','./world-3d.js?v=world3d1','./photo-world.js','./vendor/three.module.js','./vendor/three.core.js','./vendor/OrbitControls.js','./online.js?v=world3d1','./app.js?v=world3d1','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png',...ART];
+const FILES=['./','./index.html','./style.css?v=layouts2','./scenes.css?v=layouts2','./catalog.js?v=layouts2','./game.js?v=layouts2','./scoring.js?v=layouts2','./art-map.js?v=layouts2','./scene-plan.js?v=layouts2','./visuals.js?v=layouts2','./world-3d.js?v=layouts2','./photo-world.js','./cinema-film.js','./world-editor.js','./vendor/three.module.js','./vendor/three.core.js','./vendor/OrbitControls.js','./online.js?v=layouts2','./app.js?v=layouts2','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png',...ART];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('butce-duellosu-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',e=>{

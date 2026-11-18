@@ -47,7 +47,7 @@ Sayfa yenilenince Çevrimiçi odama dön ile devam edilir. Odalar 24 saat geçer
 
 ## Canlı görsel sahneler
 
-32 kategori için gerçek resimlerden oluşan arka planlar ve 320 ürün görseli vardır. Kahvaltıda yiyecekler ahşap masaya, odalarda eşyalar zemine ve duvarlara, tropik adada palmiye, muz ağacı ve maymun kumsala yerleşir. Satın alınmayan ürün sahnede görünmez. Aynı türün kopyaları tek görsel ve adet etiketiyle gösterilir. Ürünler sayıya göre büyüyüp küçülen, aralıklı ve çakışmayan yerlere dizilir. Sahnedeki büyüt düğmesi ayrıntılı görünümü açar. Azaltılmış hareket tercihi desteklenir.
+32 kategori için gerçek resimlerden oluşan arka planlar ve 320 ürün görseli vardır. Kahvaltıda yiyecekler ahşap masaya, odalarda eşyalar zemine ve duvarlara, tropik adada palmiye, muz ağacı ve maymun kumsala yerleşir. Satın alınmayan ürün sahnede görünmez. Aynı türün kopyaları tek görsel ve adet etiketiyle gösterilir. Her kategorinin eşya konumları, boyutları ve montaj yüzeyleri ayrı ayrı tanımlanır. Sahnedeki büyüt düğmesi ayrıntılı görünümü açar. Azaltılmış hareket tercihi desteklenir.
 
 Görseller `dist/assets/`, yerleştirme sistemi `dist/visuals.js`, eşleme dosyası `dist/art-map.js` içindedir. Görseller yerleşik görüntü üretim aracıyla üretildi; `artwork/prompts.json` üretim istemlerini, `artwork/manifest.json` görsel eşlemesini içerir. WebP optimizasyonu alfa saydamlığını korur. Orijinal referans görsel kullanıcıya aittir ve bu depoya kopyalanmadı.
 
@@ -58,3 +58,15 @@ Masaüstü kopyasındaki **Oyunu Aç.url** dosyası yayındaki oyunu açar. Yere
 Canlı özgün ürün görselleri korunur. Bunlar perspektif kamerada fiziksel konumlara sabitlenmiş, kameraya dönen görsel panolar olarak çizilir; tüm ürünler hacimli model değildir. Zeminler, kahvaltı masası, stadyum sahası, tribün basamakları, koltuklar ve kale gibi yapısal parçalar 3B geometridir. Çim satın alınmadan yeşil saha oluşmaz, koltuklar yalnızca tribün bölgelerine yerleşir. Mobilyalar odada belirlenmiş alanlara gider. Aynı türün kopyaları adet etiketiyle gösterilir. Sürükleyerek döndürme, yakınlaştırma, uzaklaştırma ve kamerayı sıfırlama kontrolleri vardır. WebGL 2 destekli güncel tarayıcı gereklidir.
 
 Three.js 0.187.0 dosyaları ve lisansı `dist/vendor/` içinde yereldir. Görünür sahneler için çizici açılır; ekran dışına çıkan sahnelerin GPU kaynakları bırakılır. `dist/photo-world.js` görsel malzemeleri ve yapıları, `dist/scene-plan.js` kategori alanlarını, `dist/world-3d.js` kamera ve yaşam döngüsünü yönetir.
+
+## İşlevine göre mekân tasarımı
+
+32 kategorinin tamamında on ürün için ayrı yerleşim planı vardır; ortak bir ızgaraya otomatik dizilmez. Ekran ve tablolar duvara sabitlenir; tezgâh, masa, raf ve vitrin yüzeyleri küçük eşyaları taşır. Oturma odasında koltuk televizyona, ofiste sandalye monitöre, sınıfta sıralar tahtaya dönüktür. Garajda park şeritleri, hayvanat bahçesinde ayrı habitatlar, akvaryumda tanklar, şehir ve lunaparkta yollar bulunur. Özgün ürün resimleri korunur; yön ve temas gerektiren koltuk, masa ve sıralar hacimli geometriyle tamamlanır.
+
+Sinemada perde önde, 18 koltuk üç yükselen sırada perdeye dönük, ana hoparlörler perdenin iki yanındadır. Projektör tavana asılır. **Sinema perdesi ve 4K projeksiyon birlikte kazanıldığında** ışık demeti ve perdede hareketli tropik kısa animasyon başlar; tek başına projektör veya perde film başlatmaz. Kısa animasyon özgün ada görselinden, hareketli yelkenli, kuşlar ve su yansımalarından oluşur; harici film veya video servisi kullanmaz ve çevrimdışı çalışır. `dist/cinema-film.js` 12 kare/saniyelik tuvali üretir; yalnızca görünür sahneler ve açık sekme çizilir.
+
+## Çok ölçütlü puanlama ve eşya taşıma
+
+Her kategori en fazla 100 puandır: benzersiz ürün değeri 25, temel parçalar 25, birlikte çalışan setler 20, görsel bütünlük ve çakışmasız düzen 15, ürün grubu çeşitliliği 10, kalan bütçe 5. Her 4 TL 1 bütçe puanıdır; hiç ürün alınmadıysa bütçe puanı verilmez. Tekrarlanan ürünler puanı şişirmez. Her kategorinin temel parçaları, işlevsel setleri ve üç görsel rolü `dist/scoring.js` içinde ayrı tanımlıdır. Görsel değerlendirme bir fotoğraf jürisi değildir; rol çeşitliliği ve taşınan eşyalar arasındaki çakışmalara göre hesaplanır. Puan dökümü altı ölçütü ve eksik temel parçaları gösterir. Bilgisayar rakibi yeni ölçütlerdeki puan katkısına göre teklif verir.
+
+Sahnede **Eşyaları düzenle** düğmesiyle fare veya dokunma kullanarak taşıma açılır; aynı düğmeyle kamera kontrolüne dönülür. Duvar eşyaları duvarda, masa/raf aksesuarları destek yüzeyinde kalır. Mobilya taşındığında bağlı aksesuarları da birlikte gider. Sabit stadyum yapıları taşınmaz. Yerel modda konumlar kayıtla korunur; çevrimiçi modda sadece oyuncunun kendi eşyaları sunucu doğrulamasıyla taşınır. Hazır onayından ve sonuçların kesinleşmesinden sonra konumlar kilitlenir. Puanlar ve kazanan sunucuda da aynı kurallarla hesaplanır.

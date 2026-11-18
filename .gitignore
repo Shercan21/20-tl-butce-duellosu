@@ -9,3 +9,6 @@ dist/qa-scenes.html
 dist/qa-stadium.html
 artwork/*prototype*
 artwork/*.local.*
+
+dist/qa-*.html
+artwork/*-preview.jpg
